@@ -4,18 +4,19 @@ import { Outlet } from "react-router-dom";
 
 const Wrapper = styled.div`
   width: 100vw;
-  background-color: white;
-
-  * {
-    border: 1px solid black;
-  }
+  background-color: #f8f9fa;
+  display: flex;
+  margin-top: 0.7rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 `;
 
 const Layout = () => {
   return (
     <>
       <Wrapper>
-        <h3>오늘 세션도 화이팅</h3>
         <Outlet />
       </Wrapper>
     </>
