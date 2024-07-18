@@ -6,7 +6,7 @@ export let dummy_data = [
     thumbnail:
       "https://blog.kakaocdn.net/dn/cIWgr0/btrzdqsa7dC/SH7KmqR8NuO06ArVQIlR81/img.jpg",
     createdAt: "2024-07-12 01:02:03",
-    writer: "by hyon",
+    writer: "hyon",
     picture:
       "https://blog.kakaocdn.net/dn/cIWgr0/btrzdqsa7dC/SH7KmqR8NuO06ArVQIlR81/img.jpg",
     like: "174",
@@ -18,7 +18,7 @@ export let dummy_data = [
     thumbnail:
       "https://flexible.img.hani.co.kr/flexible/normal/960/960/imgdb/resize/2019/0121/00501111_20190121.JPG",
     createdAt: "2024-07-13 01:02:03",
-    writer: "by hyon",
+    writer: "hyon",
     picture:
       "https://blog.kakaocdn.net/dn/cIWgr0/btrzdqsa7dC/SH7KmqR8NuO06ArVQIlR81/img.jpg",
     like: "174",
@@ -31,7 +31,7 @@ export let dummy_data = [
     thumbnail:
       "https://dimg.donga.com/wps/NEWS/IMAGE/2022/01/28/111500268.2.jpg",
     createdAt: "2024-07-14 01:02:03",
-    writer: "by hyon",
+    writer: "hyon",
     picture:
       "https://blog.kakaocdn.net/dn/cIWgr0/btrzdqsa7dC/SH7KmqR8NuO06ArVQIlR81/img.jpg",
     like: "174",

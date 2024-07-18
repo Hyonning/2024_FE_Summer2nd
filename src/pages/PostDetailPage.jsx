@@ -178,6 +178,11 @@ const ShareIcon = styled.div`
   font-size: 24px;
 `;
 
+const Thumbnail = styled.img`
+  width: 800px;
+  height: 700px;
+`;
+
 function PostDetailPage() {
   const { postID } = useParams();
   const post = dummy_data.find((item) => item.postID === Number(postID));
@@ -222,7 +227,7 @@ function PostDetailPage() {
       <PostContainer>
         <Title>{post.title}</Title>
         <PostInfo>
-          <Author>서현</Author>
+          <Author>{post.writer}</Author>
           <Date>{post.createdAt}</Date>
           <Menu>통계 수정 삭제</Menu>
         </PostInfo>
@@ -232,17 +237,8 @@ function PostDetailPage() {
           <Tag>작성중</Tag>
         </Tags>
         <PostContent>
-          <h2>TanStack</h2>
-          <p>
-            웹에서 서버 상태 가져오기, 캐싱, 동기화 및 업데이트를 매우 쉽게
-            도와줌
-          </p>
-          <h2>React Query</h2>
-          <p>
-            React Application에서 서버 상태를 불러오고, 캐싱하고, 지속적으로
-            동기화하고 업데이트하는 작업을 도와주는 라이브러리 useInfiniteQuery
-            등 무한 스크롤을 구현할 수도 있음
-          </p>
+          <p>{post.content}</p>
+          <Thumbnail src={post.thumbnail} alt="Thumbnail" />
         </PostContent>
       </PostContainer>
     </PageWrapper>

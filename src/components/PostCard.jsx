@@ -112,7 +112,7 @@ function PostCard({
         <Footer>
           <Writer>
             <Picture src={picture} alt="Writer's Picture" />
-            {writer}
+            by {writer}
           </Writer>
           <Like>{like}</Like>
         </Footer>
