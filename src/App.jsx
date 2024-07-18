@@ -1,6 +1,6 @@
-import { styled, ThemeProvider } from "styled-components";
-
+import React from "react";
 import { Outlet } from "react-router-dom";
+import { styled } from "styled-components";
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -15,20 +15,14 @@ const Wrapper = styled.div`
 
 const Layout = () => {
   return (
-    <>
-      <Wrapper>
-        <Outlet />
-      </Wrapper>
-    </>
+    <Wrapper>
+      <Outlet />
+    </Wrapper>
   );
 };
 
 function App() {
-  return (
-    <>
-      <Layout />
-    </>
-  );
+  return <Layout />;
 }
 
 export default App;

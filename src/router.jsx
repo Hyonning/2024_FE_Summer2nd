@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 
 import HomePage from "./pages/HomePage";
@@ -10,7 +10,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: "/", element: <HomePage /> },
-      { path: "/postID/:postID", element: <PostDetailPage /> },
+      { path: "post/:postID", element: <PostDetailPage /> },
     ],
   },
 ]);
